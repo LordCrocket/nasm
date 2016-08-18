@@ -11,6 +11,7 @@ asm_main:
 	call print
 	call scan
 	mov r12, rax
+
 	mov rdi,prompt2
 	call print
 	call scan
@@ -22,32 +23,11 @@ while:
 
 	mov r14,r13
 
-	;mov rdi, fmt
-	;mov rsi, r12
-	;call print
-
-	;mov rdi, fmt	
-	;mov rsi, r13
-	;call print
-
 	xor rdx,rdx
 	mov rax,r12
 	div r13
 
-	;mov r15,rax ; Quotient
 	mov r13,rdx ; Reminder
-
-	mov rdi, fmt	
-	mov rsi, r12
-	call print
-
-	mov rdi, fmt	
-	mov rsi, r13
-	call print
-
-	mov rdi, fmt	
-	mov rsi, r15
-	call print
 
 	mov r12,r14
 
