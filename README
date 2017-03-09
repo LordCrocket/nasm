@@ -1,0 +1,3 @@
+gcc -c driver.c
+
+nasm -f elf64 euclid.asm && gcc -o euclid driver.o euclid.o
