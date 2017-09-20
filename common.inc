@@ -20,7 +20,7 @@ print:
 	push    rbp
 	mov	rbp, rsp
 	xor	rax, rax
-	call	printf
+	call	printf wrt ..plt
 	pop	rbp
 	leave
 	ret
@@ -29,9 +29,9 @@ scan:
 	push rbp
 	mov rbp,rsi
 	mov rdi, formatin
-        mov  rsi, integer1
+    mov  rsi, integer1
 	xor  rax,rax
-	call scanf
+	call scanf wrt ..plt
 	mov rax, [integer1]
 	pop rbp
 	leave

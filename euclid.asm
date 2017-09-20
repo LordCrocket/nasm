@@ -1,3 +1,4 @@
+DEFAULT REL
 %include "common.inc"
 
 
